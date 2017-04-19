@@ -1,9 +1,16 @@
 {
   "name": "ngx-electron-demo",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Michael Callaghan",
+  "homepage": "http://github.com/walkingriver",
+  "repository": {
+    "url": "git@github.com:walkingriver/ngx-electron-ionic-demo.git",
+    "type": "git"
+  },
   "private": true,
+  "main": "server/main.js",
   "scripts": {
+    "start": "electron .",
+    "mon": "nodemon --exec \"npm start\"",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "ionic:build": "ionic-app-scripts build",
@@ -24,15 +31,18 @@
     "@ionic/storage": "2.0.1",
     "ionic-angular": "3.0.1",
     "ionicons": "3.0.0",
+    "ngx-electron": "0.0.11",
     "rxjs": "5.1.1",
     "sw-toolbox": "3.4.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "1.3.0",
-    "typescript": "~2.2.1",
+    "@ionic/app-scripts": "1.3.1",
     "@ionic/cli-plugin-cordova": "0.0.12",
-    "@ionic/cli-plugin-ionic-angular": "0.0.6"
+    "@ionic/cli-plugin-ionic-angular": "0.0.6",
+    "electron": "^1.6.5",
+    "nodemon": "^1.11.0",
+    "typescript": "~2.2.1"
   },
   "version": "0.0.1",
   "description": "An Ionic project"
